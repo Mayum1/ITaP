@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class task2 {
     public static void main(String[] args) {
         System.out.println("1.\n");
-        System.out.println(Repeat("mice", 5));
-        System.out.println(Repeat("hello", 3));
-        System.out.println(Repeat("stop", 1));
+        System.out.println(repeat("mice", 5));
+        System.out.println(repeat("hello", 3));
+        System.out.println(repeat("stop", 1));
         System.out.println("\n2.\n");
         System.out.println(differenceMaxMin(new int[]{10, 4, 1, 4, -10, -50, 32, 21}));
         System.out.println(differenceMaxMin(new int[]{44, 32, 86, 19}));
@@ -50,7 +50,7 @@ public class task2 {
         System.out.println(boxSeq(2));
     }
 
-    public static String Repeat(String a, int n) {
+    public static String repeat(String a, int n) {
         String b = "";
         for (int i = 0; i < a.length(); i++)
             for (int j = 0; j < n; j++)
