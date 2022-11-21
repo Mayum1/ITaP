@@ -3,7 +3,7 @@
 <h3><a href="https://github.com/Mayum1/ITaP/tree/main/src/Lab1">Лабораторная 1</a></h3>
 <h3><a href="https://github.com/Mayum1/ITaP/tree/main/src/Lab2">Лабораторная 2</a></h3>
 <h3><a href="https://github.com/Mayum1/ITaP/tree/main/src/Lab3">Лабораторная 3</a></h3>
-<h3>Лабораторная 4</h3>
+<h3><a href="https://github.com/Mayum1/ITaP/tree/main/src/Lab4">Лабораторная 4</a></h3>
 <h3>Лабораторная 5</h3>
 <h3>Лабораторная 6</h3>
 <h3>Лабораторная 7</h3>
