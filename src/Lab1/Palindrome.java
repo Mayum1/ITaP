@@ -1,3 +1,5 @@
+package Lab1;
+
 public class Palindrome {                           // Проверка слова на палиндром
     public static void main(String[] args) {
         for (int i = 0; i < args.length; i++) {
