@@ -41,7 +41,13 @@ public class FractalExplorer {
         contentPane.add(imageDisplay, BorderLayout.CENTER);
 
         JButton resetFractalButton = new JButton("Reset Display");
-        resetFractalButton.addActionListener(new ActionHandler());
+        resetFractalButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                fractalGenerator.getInitialRange(range);
+                drawFractal();
+            }
+        });
 
         contentPane.add(resetFractalButton, BorderLayout.SOUTH);
 
@@ -97,15 +103,6 @@ public class FractalExplorer {
         @Override
         public void mouseExited(MouseEvent e) {
 
-        }
-    }
-
-    public class ActionHandler implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            fractalGenerator.getInitialRange(range);
-            drawFractal();
         }
     }
 }
