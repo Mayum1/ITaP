@@ -47,7 +47,7 @@ public class Task4 {
         System.out.println(trouble(33789, 12345337));
         System.out.println("\n10.\n");
         System.out.println(countUniqueBooks("AZYWABBCATTTA", 'A'));
-        System.out.println(countUniqueBooks("$AA$BBCATT$C$$B$", '$'));
+        System.out.println(countUniqueBooks("1AA1BBCATT1C11B1", '1'));
         System.out.println(countUniqueBooks("ZZABCDEF", 'Z'));
 
     }
@@ -207,10 +207,8 @@ public class Task4 {
         return false;
     }
 
-    public static String countUniqueBooks(String a, char b) {
-        a = a.replaceAll(Character.toString(b), "1");
-        return a;
-        /*String[] group = a.split(Character.toString(b),-1);
+    public static int countUniqueBooks(String a, char b) {
+        String[] group = a.split(Character.toString(b),-1);
         String unique = "";
         int i = 1;
         while (i < group.length - 1) {
@@ -220,6 +218,6 @@ public class Task4 {
                     unique += ch;
             i = i + 2;
         }
-        return unique.length();*/
+        return unique.length();
     }
 }
